@@ -14,6 +14,9 @@ What's in this template?
 It also comes with a few useful scripts in [Makefile](Makefile)
 
 ```
+// Rename all "MyApp" instances to something else
+make setup
+
 // Bootstrap
 make bootstrap 
 
@@ -28,4 +31,15 @@ make format-staged
 
 // Setup git-precommit hook that format staged files
 make githooks
+```
+
+## Getting Started
+
+```sh
+git clone https://github.com/alephao/xcode-ios-template.git
+cd xcode-ios-template
+
+make setup # Rename MyApp to your chosen project name
+make bootstrap # Install dependencies
+make proj # Generate xcodeproj
 ```
