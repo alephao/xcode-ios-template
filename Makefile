@@ -1,5 +1,11 @@
 SHELL=/bin/bash
 
+.PHONY: setup
+setup:
+	@read -p "Enter the project name: " projname; \
+	mv MyApp $$projname; \
+	sed -i '' "s/MyApp/$${projname}/g" project.yml
+
 .PHONY: bootstrap
 bootstrap:
 	@mint bootstrap
